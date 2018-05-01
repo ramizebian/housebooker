@@ -13,9 +13,9 @@
                             <label class="name my-2" id="lblName"></label>
                             
                             <div class="profile-summary">
-                                Housebooker: 6<br/>
-                                Housebooked: 3<br/>
-                                Actions last 24 hours: 3<br/><br/>
+                                My Devices: 14<br/>
+                                Other Devices: 3<br/>
+                                Actions last 24 hours: 3 <a href="log">(View log)</a><br/><br/>
                                 <a href="notifications" class="alert-danger p-2 mt-2">Notifications: 1</a>
                             </div>
                             <div><a href="javascript:facebooklogout();" class="nav-link">Logout</a></div>
@@ -26,7 +26,9 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="box">
-                                <h6>My Housebooker</h6>
+                                <h6>My Devices</h6><br/>
+                                
+                                <h6 class="subtitle">My House</h6>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
                                         <a href="details">
@@ -78,6 +80,90 @@
                                         </a>
                                     </div>
                                 </div>
+
+                                <hr/>
+                                
+                                <h6 class="subtitle">My Workplace</h6>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="details">
+                                            <div class="box-iot">
+                                                Curtains
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="details">
+                                            <div class="box-iot">
+                                                Microwave
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="details">
+                                            <div class="box-iot">
+                                                Door Lock
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="details">
+                                            <div class="box-iot">
+                                                AC / Heater
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="details">
+                                            <div class="box-iot">
+                                                Lights
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="add">
+                                            <div class="box-iot">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <hr/>
+                                
+                                <h6 class="subtitle">My Music Studio</h6>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="details">
+                                            <div class="box-iot">
+                                                Curtains
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="details">
+                                            <div class="box-iot">
+                                                AC / Heater
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="details">
+                                            <div class="box-iot">
+                                                Lights
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="add">
+                                            <div class="box-iot">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+
                             </div>
                         </div>
                     </div>
@@ -115,7 +201,7 @@
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12 col-12">
                     <div class="box">
-                        <h6>Housebooked to</h6>
+                        <h6>Other Devices</h6>
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
                                 <a href="details">

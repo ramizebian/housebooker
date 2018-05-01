@@ -50,8 +50,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     color: inherit;
     margin-bottom: 2rem;
-    color: #a0a0a0;
+    color: #000;
 }
+
+    h6.subtitle {
+        color: #4267b2;
+    }
 
 .text-black { color: #000 !important; }
 
