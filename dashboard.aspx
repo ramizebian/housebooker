@@ -15,8 +15,8 @@
                             <div class="profile-summary">
                                 Housebooker: 6<br/>
                                 Housebooked: 3<br/>
-                                Actions last 24 hours: 3<br/>
-                                Warnings: 0
+                                Actions last 24 hours: 3<br/><br/>
+                                <a href="notifications" class="alert-danger p-2 mt-2">Notifications: 1</a>
                             </div>
                             <div><a href="javascript:facebooklogout();" class="nav-link">Logout</a></div>
                         </div>
@@ -84,7 +84,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="box">
-                            <h6>Request Access to</h6>
+                            <h6><u>Rami</u>, Since you are in <u>San Jose</u>, you might be intersted in requesting access to:</h6>
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 text-center">
                                     <a href="details">

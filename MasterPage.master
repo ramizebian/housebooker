@@ -112,7 +112,7 @@
     <!-- Content PlaceHolder -->
     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
     
-    <div class="d-none">
+    <div class="d-block">
         <input type="text" id="UserId" />
         <input type="text" id="AccessToken" />
         <input type="text" id="Name" />
