@@ -1,0 +1,115 @@
+﻿/*----------------------------------------------------
+' Package: The Chill Hill
+' Version: 1.0
+' Date Created: 21-03-2018
+' Last Modified: 21-03-2018
+' Authors: LeLaboDigital <info@lelabodigital.com>
+----------------------------------------------------*/
+
+nav.menu {
+    cursor: pointer;
+    float: left;
+    height: 36px;
+    margin: 30px 0 0 40px;
+    position: absolute;
+    width: 42px;
+    z-index: 999;
+}
+
+nav.menu div.strokes {
+    -o-transition: transform 0.3s, opacity 0.1s;
+    -webkit-transition: opacity 0.1s, -webkit-transform 0.3s;
+    background: white;
+    height: 6px;
+    margin: 0 0 6px 0;
+    transition: opacity 0.1s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.1s;
+    transition: transform 0.3s, opacity 0.1s, -webkit-transform 0.3s;
+    width: 100%;
+}
+
+.hide {
+    -ms-transform: translateX(-42px);
+    -webkit-transform: translateX(-42px);
+    opacity: 0;
+    transform: translateX(-42px);
+}
+
+.animate0 {
+    -ms-transform: rotate(45deg) translateY(17px);
+    -webkit-transform: rotate(45deg) translateY(17px);
+    transform: rotate(45deg) translateY(17px);
+}
+
+.animate2 {
+    -ms-transform: rotate(-45deg) translateY(-17px);
+    -webkit-transform: rotate(-45deg) translateY(-17px);
+    transform: rotate(-45deg) translateY(-17px);
+}
+
+.fullscreenmenu {
+    -o-transition: background 0.5s ease-in-out, opacity 0.5s;
+    -webkit-transition: background 0.5s ease-in-out, opacity 0.5s;
+    background-color: rgba(52, 152, 219, 0);
+    height: 100vh;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: background 0.5s ease-in-out, opacity 0.5s;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.fullscreenmenu.show {
+    -o-transition: background 0.5s ease-in-out, visibility 0.5s;
+    -webkit-transition: background 0.5s ease-in-out, visibility 0.5s;
+    background-color: rgba(255, 204, 0, 1);
+    opacity: 1;
+    transition: background 0.5s ease-in-out, visibility 0.5s;
+    z-index: 1;
+}
+
+.fullscreenmenu ul {
+    list-style: none;
+    padding: 10%;
+}
+
+.fullscreenmenu li a {
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    color: white;
+    font-family: 'Skranji', Times New Roman;
+    font-size: 52px;
+    font-weight: 200;
+    line-height: 12vh;
+    text-decoration: none;
+    transition: all 1s;
+    visibility: inherit;
+}
+
+.fullscreenmenu li a:hover { color: #000000; }
+
+@media (max-width: 1199px) {
+    .fullscreenmenu li a { font-size: 42px; }
+}
+
+@media (max-width: 991px) {
+    .fullscreenmenu li a { font-size: 32px; }
+}
+
+@media (max-width: 767px) {
+    .fullscreenmenu li a { font-size: 22px; }
+
+    nav.menu {
+        height: 36px;
+        width: 32px;
+    }
+
+    nav.menu div.strokes {
+        height: 4px;
+        margin: 0 0 8px 0;
+    }
+}

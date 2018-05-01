@@ -1,0 +1,26 @@
+﻿/*----------------------------------------------------
+' Package: Facebook F8
+' Version: 1.0
+' Date Created: 23-04-2018
+' Last Modified: 23-04-2018
+' Authors: Rami Zebian <rami.zebian@lelabodigital.com>
+----------------------------------------------------*/
+
+section.footer {
+    background-color: #ccc;
+    color: #000;
+    font-size: 14px;
+    font-weight: 200;
+    min-height: initial;
+    padding: 18px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer hr { border-top: solid 1px #fff; }
+
+@media (max-width: 991px) {
+    section.footer {
+        position: relative;
+    }
+}

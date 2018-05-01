@@ -1,0 +1,144 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<%@ Register Src="controls/footer.ascx" TagName="footer" TagPrefix="Footer" %>
+<%@ Register Src="controls/menu.ascx" TagName="menu" TagPrefix="Menu" %>
+<!DOCTYPE html>
+<html>
+<head runat="server" id="Head1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Housebooker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="Rami Zebian">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Skranji" rel="stylesheet">
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '447520869052260',
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v2.12'
+            });
+
+            // The first step when loading your web page is figuring out if a person is already logged into your app with Facebook login
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        };
+
+     
+        // This function is called when someone finishes with the Login Button.
+        function checkLoginState() {
+            FB.getLoginStatus(function(response) {
+                statusChangeCallback(response);
+            });
+        }
+
+        // This is called with the results from from FB.getLoginStatus().
+        function statusChangeCallback(response) {
+            console.log('statusChangeCallback');
+            console.log(response);
+            if (response.status === 'connected') {
+                FB.api('/me?fields=name,first_name,last_name,picture,email',
+                    function (response) {
+                        // Logged into your app and Facebook.
+                        //document.getElementById("UserId").value = intUserId;
+                        document.getElementById("Name").value = response.name;
+                        document.getElementById("Image").value = response.picture.data.url;
+
+                        var path = window.location.pathname;
+                        var page = path.split("/").pop();
+                        if (page == "index" || page == "Index" || page=="") {
+                            document.getElementById("login").click();
+                        }
+                    });
+                
+            } else if (response.status === 'not_authorized') {
+                // The person is logged into Facebook, but not your app.
+                console.log("Logged into FB but not logged into the app. Please log into this app.");
+            } else {
+                // The person is not logged into Facebook, so we're not sure if they are logged into this app or not.
+                console.log("Not logged into FB.");
+            }
+        }
+
+        function facebooklogout() {
+            FB.logout(function(response) {
+                // user is now logged out
+                document.getElementById("logout").click();
+            });
+        }
+    </script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1618780344867374&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<a id="back-to-top" href="javascript:void(0)" class="back-to-top" role="button" data-toggle="tooltip" data-placement="left">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<div id="divAllContent">
+    <!-- Menu -->
+    <%--<Menu:menu ID="menu" runat="server"/>--%>
+    
+    <form runat="server">
+        
+    
+    <!-- Content PlaceHolder -->
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    
+    <div class="d-none">
+        <input type="text" id="UserId" />
+        <input type="text" id="AccessToken" />
+        <input type="text" id="Name" />
+        <input type="text" id="Image" />
+        <button runat="server" id="login">login</button>    
+        <button runat="server" id="logout">logout</button> 
+    </div>
+
+    </form>
+    <!-- Footer -->
+    <Footer:footer ID="footer" runat="server"/>
+</div>
+<noscript>
+    <style type="text/css">
+        #divAllContent { display: none; }
+        .noscriptmsg {
+            direction: ltr;
+            position: relative;
+            text-align: center;
+            top: 10px;
+            width: 100%;
+        }
+    </style>
+    <div class="noscriptmsg">
+        This website requires javascript to work properly. Please enable javascript in your browser to continue.
+    </div>
+</noscript>
+</body>
+</html>
