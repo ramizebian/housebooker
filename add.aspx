@@ -13,15 +13,12 @@
                     <div class="box">
                         <form>
                             <div class="form-group">
-                                <label for="device">Device</label><br />
+                                <label for="device">Device Name</label><br />
                                 <input type="text" id="device" required/>
                             </div>
                             <div class="form-group">
                                 <label for="token" required>Access Token</label><br />
                                 <input type="text" id="token" />
-                            </div>
-                            <div class="form-group">
-                                <i class="fas fa-plus"></i><label for="range">Add Features</label>
                             </div>
                             <div class="form-group">
                                 <!-- Rounded switch -->
@@ -32,20 +29,6 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Save</button>
                         </form>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 col-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="box">
-                                <h6>Grant Access</h6>
-                                <a href="details">
-                                    <div class="box-iot">
-                                        <i class="fas fa-plus"></i> Invite
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

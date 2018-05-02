@@ -103,6 +103,21 @@ a.nav-link {
         color: #fff;
     }
 
+.box-iot.inverted {
+    background-color: #4267b2;
+    color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 1.25rem;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+}
+    .box-iot.inverted:hover {
+        background-color: rgba(132,132,132,0.05);
+        color: #4267b2;
+    }
+
 .box.box-landing {
     min-height: 400px;
     padding: 5rem;

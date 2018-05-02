@@ -163,6 +163,16 @@
                                     </div>
                                 </div>
                                 
+                                <hr/>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                                        <a href="#">
+                                            <div class="box-iot inverted">
+                                                <i class="fas fa-plus"></i> Add New Place
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -173,26 +183,20 @@
                             <h6><u>Rami</u>, Since you are in <u>San Jose</u>, you might be intersted in requesting access to:</h6>
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 text-center">
-                                    <a href="details">
-                                        <div class="box-iot">
-                                            Car Lock
-                                        </div>
-                                    </a>
-                                    <div class="mt-3">
-                                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
-                                        <label class="name pl-1">Dad</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 text-center">
+                                    <h6 class="subtitle">Dad's House</h6>
                                     <a href="details">
                                         <div class="box-iot">
                                             Door Lock
                                         </div>
                                     </a>
-                                    <div class="mt-3">
-                                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
-                                        <label class="name pl-1">Mom</label>
-                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 text-center">
+                                    <h6 class="subtitle">Mom's House</h6>
+                                    <a href="details">
+                                        <div class="box-iot">
+                                            Door Lock
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -202,45 +206,36 @@
                 <div class="col-lg-3 col-md-12 col-sm-12 col-12">
                     <div class="box">
                         <h6>Other Devices</h6>
-                        <div class="row">
+                        <div class="row mb-4">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                                <h6 class="subtitle">John's House</h6>
                                 <a href="details">
                                     <div class="box-iot">
                                         Door Lock
                                     </div>
                                 </a>
-                                <div class="mt-3">
-                                    <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
-                                    <label class="name pl-1">Roni Zebian</label>
-                                </div>
                             </div>
                         </div>  
                         <hr/>
-                        <div class="row">
+                        <div class="row mb-4">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-2 text-center">
+                                <h6 class="subtitle">John's Workplace</h6>
                                 <a href="details">
                                     <div class="box-iot">
                                         Car Lock
                                     </div>
                                 </a>
-                                <div class="mt-3">
-                                    <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
-                                    <label class="name pl-1">Joumana Chehayeb</label>
-                                </div>
                             </div>
                         </div>  
                         <hr/>
-                        <div class="row">
+                        <div class="row mb-4">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-2 text-center">
+                                <h6 class="subtitle">Ben's Music Studio</h6>
                                 <a href="details">
                                     <div class="box-iot">
                                         Heater / Ac
                                     </div>
                                 </a>
-                                <div class="mt-3">
-                                    <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
-                                    <label class="name pl-1">LeLaboDigital</label>
-                                </div>
                             </div>
                         </div>  
                     </div>

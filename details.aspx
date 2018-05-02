@@ -75,7 +75,7 @@
                         <div class="col-12">
                             <div class="box">
                                 <h6>Grant Access</h6>
-                                <a href="details">
+                                <a href="details"  data-toggle="modal" data-target="#exampleModal">
                                     <div class="box-iot">
                                         <i class="fas fa-plus"></i> Invite
                                     </div>
@@ -87,5 +87,53 @@
             </div>
         </div>
     </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Invite Friends</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-3">
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 1</label><br/>
+                        
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 2</label><br/>
+
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 3</label><br/>
+                        
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 4</label><br/>
+                        
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 5</label><br/>
+                        
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 6</label><br/>
+                        
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 7</label><br/>
+                        
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 9</label><br/>
+                        
+                        <img alt="" src="images/sample.jpg" class="rounded-circle" width="30" />
+                        <label class="name pl-1">Friend 9</label><br/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Invite</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 
